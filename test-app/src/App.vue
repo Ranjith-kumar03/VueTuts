@@ -5,7 +5,8 @@
   </nav> -->
   <!-- //<router-view/> -->
   <h1>please se my name {{greet}} {{name}}</h1>
-  <h1 v-text="channel"></h1>
+  <!-- <h1 v-text="channel"></h1> -->
+<h1 v-html="channel"></h1>
 </template>
 <script>
 export default{
@@ -16,7 +17,7 @@ export default{
     return{
         name:"Ranjith Kumar",
         greet:"hi Boss",
-        channel:"You Tube"
+        channel:"<i>You Tube</i>"
     }
   }
 }
