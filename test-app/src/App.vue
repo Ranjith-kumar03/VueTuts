@@ -1,10 +1,28 @@
 <template>
-  <nav>
+  <!-- <nav>
     <router-link to="/">Home</router-link> |
     <router-link to="/about">About</router-link>
-  </nav>
-  <router-view/>
+  </nav> -->
+  <!-- //<router-view/> -->
+  <h1>please se my name {{greet}} {{name}}</h1>
+  <h1 v-text="channel"></h1>
 </template>
+<script>
+export default{
+  
+
+  data()
+  {
+    return{
+        name:"Ranjith Kumar",
+        greet:"hi Boss",
+        channel:"You Tube"
+    }
+  }
+}
+</script>
+
+
 
 <style>
 #app {
